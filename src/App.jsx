@@ -1,34 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import Header from './components/Header'
+import BrightSection from './components/BrightSection'
+import LightSection from './components/LightSection'
+import DarkSection from './components/DarkSection'
+import GeneralSection from './components/GeneralSection'
+import Rules from './components/Rules'
+import Footer from './components/Footer'
+import BackToTop from './components/BackToTop'
+import './index.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <div className="app">
+      <div className="section-navigation">
+        <button className="nav-button bright" onClick={() => scrollToSection('bright-section')}>
+          детство
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        <button className="nav-button light" onClick={() => scrollToSection('light-section')}>
+          детство
+        </button>
+        <button className="nav-button dark" onClick={() => scrollToSection('dark-section')}>
+          детство
+        </button>
+        <button className="nav-button common" onClick={() => scrollToSection('general-section')}>
+          детство
+        </button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <Header />
+      <Rules />
+      <BrightSection id="bright-section" />
+      <LightSection id="light-section" />
+      <DarkSection id="dark-section" />
+      <GeneralSection id="general-section" />
+      <Footer />
+      <BackToTop />
+    </div>
   )
 }
 
