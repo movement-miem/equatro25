@@ -104,6 +104,7 @@ button:focus-visible {
   gap: 50px;
   align-items: center;
   margin: 50px 100px;
+  text-align: center;
 }
 
 .logo {
@@ -156,7 +157,7 @@ button:focus-visible {
 }
 
 .nav-button.bright {
-  background-color: #ff8a80;
+  background-color: #ef4c6d;
   color: #fff;
 }
 
@@ -166,12 +167,12 @@ button:focus-visible {
 }
 
 .nav-button.dark {
-  background-color: #474747;
+  background-color: #323232;
   color: #fff;
 }
 
 .nav-button.common {
-  background-color: #dfdfef;
+  background-color: #B4C3F8;
   color: #333;
 }
 
@@ -189,7 +190,10 @@ button:focus-visible {
 
 .rules {
   margin: 50px 100px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 h1, h2 {
@@ -221,11 +225,12 @@ h1, h2 {
 }
 
 .bright-section {
-  background: #f69f93;
+  background: #ef4c6d;
+  color: #fff;
 }
 
 .dark-section {
-  background: #474747;
+  background: #323232;
   color: white;
 }
 
@@ -234,7 +239,7 @@ h1, h2 {
 }
 
 .common-section {
-  background: #dfdfef;
+  background: #B4C3F8;
 }
 
 .bright-header, .dark-header, .light-header, .common-header {
@@ -268,7 +273,7 @@ h1, h2 {
 .common-section { z-index: 4; }
 
 .work {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -303,9 +308,9 @@ h1, h2 {
   margin-bottom: 10px;
   font-size: 24px;
   font-weight: bold;
-  color: #0056b3;
+  color: #008cff;
   text-transform: uppercase;
-  border-bottom: 2px solid #0056b3;
+  border-bottom: 2px solid #008cff;
   padding-bottom: 5px;
 }
 
@@ -389,9 +394,10 @@ h1, h2 {
 .slogan {
   text-align: center;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 64px;
   margin-top: 30px;
-  color: #0056b3;
+  color:  #008cff;
+
 }
 
 @media (max-width: 768px) {
@@ -411,6 +417,40 @@ h1, h2 {
 }
 
 
+
+.bright-section .work a {
+  background: #ef4c6d;
+}
+
+.dark-section .work a {
+  background: #323232;
+}
+
+.light-section .work a {
+  background: #efd6a5;
+}
+
+.common-section .work a {
+  background: #9db0f6;
+}
+
+.bright-section .work a:hover {
+  background: #d60654;
+}
+
+.dark-section .work a:hover {
+  background: #4a4a4a;
+}
+
+.light-section .work a:hover {
+  background: #ffd2a4;
+}
+
+.common-section .work a:hover {
+  background: #a8b8f8;
+}
+
+
 @media (max-width: 820px) {
   body {
     padding: 0;
@@ -418,9 +458,12 @@ h1, h2 {
 
   .header, .rules, .bright-section, .dark-section, .light-section, .common-section {
     margin: 0;
-    padding: 20px;
+    padding: 15px;
     max-width: 100%;
     clip-path: none;
+  }
+  .slogan {
+    font-size: 32px;
   }
 
   .logo {
@@ -449,3 +492,4 @@ h1, h2 {
     line-height: 1.4;
   }
 }
+

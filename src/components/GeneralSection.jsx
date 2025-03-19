@@ -24,7 +24,8 @@ function GeneralSection() {
         <div>
           <h1>Детство – это </h1>
           <br />
-          <h1>... то, что делает нас — нами. детство — это НАВСЕГДА</h1>
+          <h1>... то, что делает нас — нами.</h1>
+          <h1 className="slogan">ДЕТСТВО — это НАВСЕГДА</h1>
         </div>
         <a
           href="https://music.yandex.ru/album/29559678/track/122247097?utm_medium=copy_link"
