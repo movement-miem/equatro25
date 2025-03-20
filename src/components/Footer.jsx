@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <footer>
-      <p>Экватро х Мувмент</p>
+      <p>equatro х movement</p>
       <p>
         <a href="https://t.me/hse_movement" target="_blank" rel="noopener noreferrer">
           @hse_movement
